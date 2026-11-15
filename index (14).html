@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tutunium Blocker</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<link rel="stylesheet" href="/style.css"></head><body>
+<div id="app"><div class="center"><div class="spin"></div></div></div>
+<div id="toasts"></div>
+<dialog id="dlg"><form method="dialog"><p id="cm"></p><div class="row end"><button class="btn ghost" value="cancel">Cancel</button><button class="btn danger" value="ok">Confirm</button></div></form></dialog>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script>
+  // ====== INSERISCI QUI I DATI DI SUPABASE (Project Settings > API) ======
+  window.TB = {
+    url: "PASTE_SUPABASE_URL_HERE",   // es. https://abcdxyz.supabase.co
+    key: "PASTE_ANON_KEY_HERE"        // chiave "anon public" (MAI la service_role)
+  };
+</script>
+<script src="/app.js"></script></body></html>
